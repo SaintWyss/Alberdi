@@ -1,0 +1,19 @@
+[Unit]
+Description=Polymarket fee-aware arbitrage engine
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/alberdi
+EnvironmentFile=/opt/alberdi/.env
+ExecStart=/usr/bin/node /opt/alberdi/dist/index.js run
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/alberdi/data
+
+[Install]
+WantedBy=multi-user.target
