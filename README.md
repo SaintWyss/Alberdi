@@ -1,4 +1,9 @@
-# Alberdi
+<h1 align="center">Alberdi</h1>
+
+<p align="center"><strong>Investigación y ejecución supervisada de estrategias en mercados predictivos.</strong><br/>Python · datos · gestión de riesgo</p>
+
+> Proyecto en desarrollo. El alcance y la validación de cada funcionalidad se detallan a continuación.
+
 
 Production-oriented, fee-aware complete-set arbitrage engine for Polymarket CLOB V2. It scans standard binary markets, buys equal YES and NO quantities only when the full executable depth remains profitable after taker fees and a safety reserve, then merges the pair back into pUSD.
 
