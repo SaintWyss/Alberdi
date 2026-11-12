@@ -9,6 +9,12 @@ Production-oriented, fee-aware complete-set arbitrage engine for Polymarket CLOB
 
 This repository is the complete software project, not a profit promise. Turning $10 into $100 in seven days requires roughly 38.95% compounded every day. Alberdi stops rather than inventing leverage, directional bets, martingales or hidden risk to chase that target.
 
+## Technology and architecture
+
+The project uses **TypeScript and Node.js**, the Polymarket CLOB client, WebSocket market data, **SQLite** for the audit trail, and Prometheus metrics. An optional OpenAI supervisor can reduce risk or pause operation; the execution decision and hard risk gates remain deterministic.
+
+Market discovery and order books feed a complete-set evaluator; candidates pass through risk checks before reaching the paper or live broker. The live path reconciles balances and merges matched inventory. Audit and status components record and expose operational evidence. See [Implemented architecture](docs/ARCHITECTURE.md) for component boundaries and sequence diagrams.
+
 ## Current status
 
 - Repository release: `v1.0.0`.
