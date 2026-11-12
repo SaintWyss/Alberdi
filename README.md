@@ -1,6 +1,6 @@
 <h1 align="center">Alberdi</h1>
 
-<p align="center"><strong>Investigación y ejecución supervisada de estrategias en mercados predictivos.</strong><br/>Python · datos · gestión de riesgo</p>
+<p align="center"><strong>Investigación y ejecución supervisada de estrategias en mercados predictivos.</strong><br/>TypeScript · Node.js · gestión de riesgo</p>
 
 > Proyecto en desarrollo. El alcance y la validación de cada funcionalidad se detallan a continuación.
 
